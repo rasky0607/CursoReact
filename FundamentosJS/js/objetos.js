@@ -23,8 +23,8 @@ console.table(producto);
 console.log("|*-------------------*|");
 //Como acceder a los propiedad de un objeto:
 console.log("Nombre del producto -> "+producto.nombre);
-console.log("Precio del producto -> "+producto.nombre);
-console.log("Disponible del producto -> "+producto.nombre);
+console.log("Precio del producto -> "+producto.precio);
+console.log("Disponible del producto -> "+producto.disponible);
 console.log("|*-------------------*|");
 /* Destructuring 
 (Sacar un atributo deun objeto, para poder llamarlo sin la nomenclatura  "objeto.atributo")

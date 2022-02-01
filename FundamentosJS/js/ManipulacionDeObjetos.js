@@ -21,7 +21,8 @@ console.log("Destructuring -> "+tipoCliente);
 
 console.log("|*-------------------*|");
 /*
-Literal Enhacement, para introducir una varaible como propiedad dentro de objetos
+Literal Enhacement,
+para introducir una varaible como propiedad dentro de objetos
 */
 const autenticado = true;
 const usuario = "Pablo";
