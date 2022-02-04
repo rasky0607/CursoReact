@@ -1,2 +1,4 @@
 # CursoReact
-URLS de proyectos originales realizados en el curso
+Curso en Udemy de React - La Guía Completa: Hooks Context Redux MERN +15 Apps
+ 
+Creado por: Juan Pablo De la torre Valdez
