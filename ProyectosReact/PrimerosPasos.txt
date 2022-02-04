@@ -1,0 +1,29 @@
+1- Nos dirigimos a https://nodejs.org/en/ 
+
+2- descartamos la vertsion LTS, ya sea para Windows o Mac
+    Windows:
+    -2.1 En el caso de Windows cuando ejecutamos la instlacion, en uno de los pasos "Asegurarse tener marcada la opcion (Add to PATH)
+    -2.2 En  windws otra de las ventans despues de aseguranos el paso anterior (2.1), debemos marcar la casilla que indica (instalar todas las herramientasnecesarias)
+    -2.3 Aparecera la consola y nos pedira presionar cualquier tecla, tras la cual, empezarala instlacion. (Algunas veces la instalacion se para, presiona enter y se refrescara)
+    -2.4 En caso de aparecer un mensaje de error (No restart manager available...)
+        -2.4.1  Para solucionar esto, cerramos el powershell y abrimos de nuevo el instalador de NodeJs y presionamos en "Repair"
+    -2.5 Para comprobar una instalación correcta, escribimos ne la consola: node -v y despues npm -v y obtendremos la version de estos dos paquetes indicado que todo esta correcto.
+
+    Mac:
+    2.1 Solo necesitas, seguir los pasos del instalador presionando "Continuar".
+
+3- Creación de un proyecto y el arranque de este:
+    3.1 Abrimos la termina, y para crear el proyecto escribimos:
+        3.1.1 " npm init vite@latest "(latest, imagino que es referido a latan este)
+        3.1.2 A continuación, nos pedira el nombre del Proyecto y presionamos enter.
+        3.1.3 Escogemos la tecnología deseada ( en este caso React )
+        3.1.4 Dentro de esta nos dara ha escoger entre  (React o React Ts), escogeremos React
+    3.2 Ahora podemos ver que se creo la carpeta del proyecto, y nos indica una serie de comandos a realizar dentro de la carpeta
+        3.2.1 Estos comando son:
+                cd nombreProyecto
+                npm install
+                npm run dev "Este último comando nos arrancara un servidor, nos daran una url en locahost que deberemos utilizar durante el desarrollo del proyecto"
+
+    
+
+        
