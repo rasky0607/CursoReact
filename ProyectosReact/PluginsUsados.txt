@@ -1,0 +1,24 @@
+1- Auto Rename Tag "Juan Han"
+2- Bracket Pair Colorizer "CoeraadS"
+3- Code Snippets - React / React Native / Teact Hooks /Style Components "Eduardo Libeerato sotero"
+4- DotEnv "mikestead"
+5- ES7 React/Redux/GraphQL/react-Native snippets "rodrigovallades" (Simplificacin de codigo con abreviaturas)
+6- Live Server "Ritwick Dey"
+7- vscode-icons "VSCode Icons Team"
+8- Para desbugear componentes en chrome, instalamos la extension "React Developer Tools", tambien disponible en firefox
+9- tailwindcss para escribir el codigo css https://tailwindcss.com/
+    -Con tailwindcss a diferencia de boostrap que indicamos una clase y le añade todos los estilos, con tailwindcss, añadimos los estilos directamente en la clase, de forma que podemos personalizar el componente
+    -Para instarlo  abrimos una terminal en VSCode y escribimos " npm install -D tailwindcss@latest postcss@latest autoprefixer@latest  "
+    -Para iniciarlo escribiremos " npx tailwindcss init -p ", esto nos creara dos ficheros uno "postcss.config.js y otro "tailwind.config.js"
+    -Cambiar en el fichero  "tailwind.config.js", esta linea " content: [] " por esta: " content: ["./index.html", "./src/**/*.{jsx}"] "
+        De forma que buscara en el fichero indes y en todos los ficheros de todas las carpetas que esten dentro de src y tengan la extension .jsx
+    -Elimnamos el contenido de index.css y realizamos los siguientes imports:
+        1- @import "tailwindcss/base";
+        2- @import "tailwindcss/components";
+        3- @import "tailwindcss/utilities";
+    -En el caso de no ver aplicado los cambios con los nuevos estilos, reiniciamos el servicio de la consola  y ejecutamos de nuevo el "npm run dev"
+10- Instalar la el plugin en VSCode " Tailwind CSS IntelliSense " para que nos sugiera el codigo todas las clases de tailwind
+11- Css Peek, te da una preview del css que se va agregar
+
+
+    
