@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom' //Este import, es especifico para la version we
 import './index.css' //Hoja de estilos para toda la aplicacion
 //Nota: podemos tener otras hojas de estilos para un componente en especifico, esas se llaman "Modulos"
 import App from './App'
-import './dist/output.css'
+
 
 
 ReactDOM.render(
