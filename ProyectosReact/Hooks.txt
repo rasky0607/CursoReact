@@ -1,0 +1,85 @@
+¿Que son los Hooks?
+    Estos estan disponibles desde la version 16.8,
+    realmente son funciones de la API de React que nos permiten crear multitud de aplicaciones.
+    Podemos crear Hooks propios que nos permiten separa nuestro codigo en funciones reutilizables.
+
+Estos de React se dividen en Basicos y en adicionales.
+Basicos:
+    -useState
+    -useEffect
+    -useContext
+Adicionales:
+    -useReducer
+    -useCallback
+    -useMemo
+    -useRef
+    -useImperativeHandle
+    -useLayoutEffect
+    -useDebugValue
+
+Para importar un Hook como useState o useEffect en nuestro proyecto:
+    import {useState, useEffect} from 'React';
+
+Que es el useState:
+    Es una variable con informacion relevante en nuestra aplicacion de react
+    Es el estado en el que se encuentra tu aplicacion, Ejemplo: (Si tengoun carrito de compras,
+    cual es el estado de ese carrito de compras ¿tiene elementos? o ¿esta vacio?, ¿Que elementos tiene?).
+    En ocasiones el useState, pertenece a un componente en especifico, y otras es compartido entre diferentes componentes.
+    El useState, es creado con la funcion " useState() " que importamos con el import indicado anteriormente.
+
+    Cada vez que tu State cambia, tu aplicacion de React reacciona y se renderiza y actualiza con esos cambios.
+    Es decir, sin necesidad de recargar la pagina    
+
+    
+    -como usamos esa funcion useState():
+        Ejemplo 1:
+
+        const [cliente, setCliente] = useState({});
+
+            -Encontramos 3 piezas clave en esta instruccion:
+                useState, siempre retornara una variable, y una funcion.
+
+                "cliente"-> es la variable que contiene el valor del estado.
+                "setCliente"-> es el modificador o funcion, de esa variable y unicamete esa.
+                "useState({})"-> Esas llaves, indican el valor actual del useState, por lo tanto inicia como un objeto vacio.
+
+        Ejemplo 2:
+        Cuando tenemos productos de un carrito de compra y va sumando o restando el coste total, ira modificando este State.
+        const [total, setTotal] = useState(0);
+
+         Ejemplo 3:
+         Cuando hagamos una consulta a una API, digamos que se va llenar ese array de State
+         const [clientes, setClientes] = useState([]);
+
+         Ejemplo 4:
+         Cuando queramos mostrar una ventana modal, este iniciara a falso, hasta que  tras determinada accón cambie a true y la muestre.
+         const [modal, setMotal] = useState([false]);
+
+
+Reglas de los Hooks:
+    
+    1 - Este siempre sera declarado dentro de un componente, antes del return y de otras funciones:
+
+        Ejemplo 1 "De esta forma tambien vemos como usar y cambiar el State de mi Hook":
+
+        function MiComponente() {
+            const [nombre, setNombre] = usesState('Sin nombre');
+
+            miFuncion1();
+
+            return (
+                <div>
+                    <input id='mascota' type='text' 
+                                placeholder="Nombre de la mascota" 
+                                className='border-2 mt-2 w-full p-2 placeholder-gray-400 rounded-md' 
+                                value={nombre}
+                                onChange={(e) => setNombre(e.target.value)}/>
+                </div>
+            )
+        }
+
+        export default MiComponente
+
+    2 - Tampoco se puede colocar dentro de condicionales, ni despues de un return sea cual sea.
+
+

@@ -1,0 +1,31 @@
+Los eventos son CamelCase, es decir ( onChange en lugar de onchange)
+
+Sintaxis diferencias entre HTML y JSX:
+    HTML
+    <button onclick="descargarPedidos()">
+        Descarga pedidos
+    </button>
+
+    JSX
+    <button onClick={descargarPedidos()}>
+        Descarga pedidos
+    </button>
+
+    HTML
+    <form onsummit="agregarCliente(); return false">
+        <button type="submit">Añadir cliente</button>
+    </form>
+
+    JSX (handleSubmit , podemos darle el nombre que  queramos, pero este es un estandar)
+    <form onSummit={handleSubmit}>
+        <button type="submit">Añadir cliente</button>
+    </form>
+
+    JSX 
+    (CallBack ene l cual usamos el parametro conocedio como event, 'e', para obtener el valor devuelto por el callback,
+    indicando el elemento del que queremos obtenerlo con 'target' y su valor con 'value')
+
+     <input id='mascota' type='text' 
+            placeholder="Nombre de la mascota" 
+            value={nombre}
+            onChange={(e) => setNombre(e.target.value)}/>

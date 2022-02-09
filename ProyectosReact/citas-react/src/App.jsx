@@ -31,14 +31,15 @@ import ListadoPacientes from "./components/ListadoPacientes";
 
 function App() {
   return (
-    <div className='bg-slate-100'>
+    
       <div className="container mx-auto">
           <Header/>
           <div className="mt-12 md:flex h-screen">
-              <Formulario/>     
+              <Formulario/>  
+              <ListadoPacientes/>   
           </div>
       </div> 
-    </div>
+    
   )
 }
 
